@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. CSS Floats</title>
+    <style>
+        .container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #10ff7b;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .menu {
+            float: left;
+            width: 20%;
+            background-color: #6cca00;
+            padding: 10px;
+        }
+        .content {
+            float: left;
+            width: 60.3%;
+            padding: 10px;
+        }
+        .ads {
+            float: left;
+            width: 20%;
+            background-color: #00a30e;
+            padding: 10px;
+        }
+        .footer {
+            background-color: #005a0f;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Encabezado</div>
+        <div class="menu">Menú</div>
+        <div class="content">Contenido Principal</div>
+        <div class="ads">Anuncios</div>    
+    </div>
+    <div class="footer">Pie de página</div>
+</body>
+</html>

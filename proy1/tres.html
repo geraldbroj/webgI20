@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. CSS Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header, .footer {
+            background-color: #c52525;
+            text-align: center;
+            padding: 10px;
+        }
+        .main {
+            display: flex;
+            flex: 1;
+        }
+        .menu, .menu2 {
+            background-color: #a74040;
+            padding: 10px;
+        }
+        .menu {
+            width: 20%;
+        }
+        .content {
+            width: 60%;
+            padding: 10px;
+            background-color: rgb(223, 105, 89);
+        }
+        .menu2 {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Encabezado</div>
+        <div class="main">
+            <div class="menu">menu 1</div>
+            <div class="content">Contenido Principal</div>
+            <div class="menu2">menu 2</div>
+        </div>
+        <div class="footer">Pie de página</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 20% 60% 20%;
+            height: 500px;
+            color: beige;
+            font-size: large;
+        }
+        .header {
+            grid-column: 1 / span 3;
+            background-color: #1126e0;
+            text-align: center;
+            padding: 10px;
+        }
+        .menu {
+            grid-column: 1 / 2;
+            background-color: #6663ff;
+            padding: 10px;
+        }
+        .content {
+            background-color: rgb(117, 148, 235);
+            grid-column: 2 / 3;
+            padding: 10px;
+        }
+        .ads {
+            grid-column: 3 / 4;
+            background-color: #7159f8;
+            padding: 10px;
+        }
+        .footer {
+            grid-column: 1 / span 3;
+            background-color: #200696;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Encabezado</div>
+        <div class="menu">menu</div>
+        <div class="content">Contenido Principal</div>
+        <div class="ads">menu 2</div>
+        <div class="footer">Pie de página</div>
+    </div>
+</body>
+</html>
